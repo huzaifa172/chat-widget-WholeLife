@@ -18,16 +18,36 @@ export default function ChatWidget() {
 
   const handleSubmitMessage = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const message = e.target.message.value;
-    if (!message) {
+
+
+    const form = e.currentTarget;
+    const input = form.elements.namedItem("message") as HTMLInputElement;
+    
+    if (!input || !input.value) {
       return;
     }
-
-    setMessages([...messages, { role: "user", content: message }]);
-    e.target.message.value = "";
+  
+    setMessages([...messages, { role: "user", content: input.value }]);
+    input.value = "";
+  
     setTimeout(() => {
-      scrollTargetRef.current.scrollIntoView({ behavior: "smooth" });
+      scrollTargetRef.current?.scrollIntoView({ behavior: "smooth" });
     }, 100);
+
+
+    // this is previous code
+    // const message = e.target.message.value;
+    // if (!message) {
+    //   return;
+    // }
+
+    // setMessages([...messages, { role: "user", content: message }]);
+    // e.target.message.value = "";
+    // setTimeout(() => {
+    //   scrollTargetRef.current.scrollIntoView({ behavior: "smooth" });
+    // }, 100);
+
+
   };
   const quickQuestionArray = [{
     role: "user",
@@ -55,15 +75,12 @@ export default function ChatWidget() {
 ];
 function handleQQ(idx) {
 if (typeof window !== "undefined") {
-  const quickQues = document.getElementById("quickQues-"+idx.toString());
-  console.log(quickQues?.innerText);
+  const selectedQuestion = quickQuestionArray[idx].content;
+  setMessages((prevMessages) => [...prevMessages, { role: "user", content: selectedQuestion }]);
 
-  setMessages([...messages, { role: "user", content: quickQues?.innerText }]);
   setTimeout(() => {
-    scrollTargetRef.current.scrollIntoView({ behavior: "smooth" });
+    scrollTargetRef.current?.scrollIntoView({ behavior: "smooth" });
   }, 100);
-
-
 }}
   
   
@@ -80,7 +97,7 @@ if (typeof window !== "undefined") {
                   item.role === "user" ? "ml-10 justify-end" : "mr-10"
                 }`}
               >
-                <p className={`p-4 rounded-[18px] text-white `} style={{ backgroundImage: "linear-gradient(135deg, #d1c5b7 0%, #756d5d 100%)" }}
+                <p className={`py-1 px-3 rounded-[12px] text-white `} style={{ backgroundImage: "linear-gradient(135deg, #d1c5b7 0%, #756d5d 100%)" }}
                 >{item.content}</p>
               </li>
             ))}
