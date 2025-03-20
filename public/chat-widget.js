@@ -25,7 +25,7 @@
                 border-radius: 9999px;
                 color: white;
                 cursor: pointer;
-                background-color: #6b7280;
+                background-color: #f59e0b;
                 border-style: none;
             }
             .h-7 {
