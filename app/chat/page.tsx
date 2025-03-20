@@ -2,7 +2,7 @@
 import { useRef, useState } from "react";
 
 export default function ChatWidget() {
-  const scrollTargetRef = useRef(null);
+  const scrollTargetRef = useRef<HTMLDivElement | null>(null);
   const intialMesages = [
     {
       role: "user",
