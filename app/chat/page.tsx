@@ -73,7 +73,7 @@ export default function ChatWidget() {
     content: "whats the price",
   },
 ];
-function handleQQ(idx) {
+function handleQQ(idx : number) {
 if (typeof window !== "undefined") {
   const selectedQuestion = quickQuestionArray[idx].content;
   setMessages((prevMessages) => [...prevMessages, { role: "user", content: selectedQuestion }]);
