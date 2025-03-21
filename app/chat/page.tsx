@@ -171,13 +171,13 @@ export default function ChatWidget() {
   }
 
   return (
-    <div className="relative bg-white max-w-[400px] rounded-[10px] border border-[#f59e0b] rounded-[10px]">
-      <div style={{ display: 'flex' }}>
+    <div className="relative bg-white max-w-[400px] mt-8 rounded-[10px] border border-[#f59e0b] rounded-[10px]">
+      <div style={{ display: 'flex', alignContent: 'center', alignItems: 'center', marginLeft: '2vh' }}>
           <img
             src="logo.png"
             alt="Wholelife Church Logo"
             className="object-contain w-full h-full p-1"
-            style={{width: "55px"}}
+            style={{width: "45px"}}
           />
         <p className="p-4 font-bold">Chat with me!</p>
       </div>
