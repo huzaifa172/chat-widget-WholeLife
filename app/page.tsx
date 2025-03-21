@@ -10,11 +10,10 @@ export default function Home() {
             ChatWidget.init("xx-slkUdka819...");
         };
         `}</Script>
-      <h1>My Next.js Application</h1>
       <div>
-      <iframe src="..." className="hidden" ></iframe>
-      <button id="trigger-btn"></button>
-    </div>
+        <iframe src="..." className="hidden" ></iframe>
+        <button id="trigger-btn"></button>
+      </div>
 
    </>
   );
