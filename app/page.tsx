@@ -10,13 +10,12 @@ export default function Home() {
             ChatWidget.init("xx-slkUdka819...");
         };
         `}</Script>
-      <div className="flex justify-center items-center h-screen w-screen bg-transparent">
+      <div className="flex justify-center items-center h-screen w-screen bg-transparent p-[50px]">
       <div>
       <iframe src="..." className="hidden" ></iframe>
       <button id="trigger-btn"></button>
     </div>
       </div>
-        <iframe src="..." className="hidden" ></iframe>
         {/* Chat widget deployed on vercel by Huzaifa:*/}
         {/* <iframe
           src="https://demo-practics-chat.vercel.app/"

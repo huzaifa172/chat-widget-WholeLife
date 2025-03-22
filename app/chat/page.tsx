@@ -171,7 +171,7 @@ export default function ChatWidget() {
   }
 
   return (
-    <div className="relative bg-white max-w-[400px] mt-8 rounded-[10px] border border-[#f59e0b] rounded-[10px]">
+    <div className="relative bg-transparent max-w-[400px] mt-8 rounded-[10px] border border-[#f59e0b] rounded-[10px]">
       <div style={{ display: 'flex', alignContent: 'center', alignItems: 'center', marginLeft: '2vh' }}>
           <img
             src="logo.png"
