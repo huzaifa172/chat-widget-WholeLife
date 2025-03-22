@@ -246,7 +246,7 @@ export default function ChatWidget() {
           <input
             name="message"
             placeholder="Ask any question"
-            className="px-2 py-1.5 border text-[12px] border-gray-300 rounded-full flex-1 font-normal focus:outline-none focus:border-[#f59e0b]"
+            className="px-2 py-1.5 border text-black text-[12px] border-gray-300 rounded-full flex-1 font-normal focus:outline-none focus:border-[#f59e0b]"
             disabled={isLoading}
           />
           <button
