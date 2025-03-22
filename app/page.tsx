@@ -10,26 +10,11 @@ export default function Home() {
             ChatWidget.init("xx-slkUdka819...");
         };
         `}</Script>
-      <div className="flex justify-center items-center h-screen w-screen bg-transparent p-[50px]">
+      <div className="flex justify-center items-center bg-transparent p-[50px]">
       <div>
       <iframe src="..." className="hidden" ></iframe>
       <button id="trigger-btn"></button>
     </div>
-
-
-
-    <h1>khfaoshdfuihfkjblasljdfhiausdgajksldfh</h1>
-    <h1>khfaoshdfuihfkjblasljdfhiausdgajksldfh</h1>
-    <h1>khfaoshdfuihfkjblasljdfhiausdgajksldfh</h1>
-    <h1>khfaoshdfuihfkjblasljdfhiausdgajksldfh</h1>
-    <h1>khfaoshdfuihfkjblasljdfhiausdgajksldfh</h1>
-    <h1>khfaoshdfuihfkjblasljdfhiausdgajksldfh</h1>
-    <h1>khfaoshdfuihfkjblasljdfhiausdgajksldfh</h1>
-    <h1>khfaoshdfuihfkjblasljdfhiausdgajksldfh</h1>
-    <h1>khfaoshdfuihfkjblasljdfhiausdgajksldfh</h1>
-    <h1>khfaoshdfuihfkjblasljdfhiausdgajksldfh</h1>
-    <h1>khfaoshdfuihfkjblasljdfhiausdgajksldfh</h1>
-    <h1>khfaoshdfuihfkjblasljdfhiausdgajksldfh</h1>
       </div>
         {/* Chat widget deployed on vercel by Huzaifa:*/}
         {/* <iframe
