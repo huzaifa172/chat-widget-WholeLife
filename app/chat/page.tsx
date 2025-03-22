@@ -172,7 +172,7 @@ export default function ChatWidget() {
 
   return (
     <div className="relative bg-transparent max-w-[400px] mt-8 rounded-[10px] border border-[#f59e0b] rounded-[10px]">
-      <div style={{ display: 'flex', alignContent: 'center', alignItems: 'center', marginLeft: '2vh' }}>
+      <div style={{ display: 'flex', alignContent: 'center', alignItems: 'center', marginLeft: '2vh' }} className='bg-transparent'>
           <img
             src="logo.png"
             alt="Wholelife Church Logo"
@@ -210,7 +210,7 @@ export default function ChatWidget() {
             {isLoading && (
               <li className="flex items-center mr-10">
                 <p
-                  className="py-1 px-3 rounded-[12px] text-white"
+                  className="py-1 px-3 rounded-[12px] text-black"
                   style={{
                     backgroundImage:
                       'linear-gradient(135deg, #d1c5b7 0%, #756d5d 100%)',
