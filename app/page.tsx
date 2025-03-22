@@ -10,7 +10,9 @@ export default function Home() {
             ChatWidget.init("xx-slkUdka819...");
         };
         `}</Script>
-      <h1>My Next.js Application</h1>
+      <div className="flex justify-center items-center h-[100vh] w-[100vw] bg-gray-100">
+        <h1 className="text-black text-center font-bold font-[70px] ">Whole Life Chat Widget</h1>
+      </div>
       <div>
       <iframe src="..." className="hidden" ></iframe>
       <button id="trigger-btn"></button>
