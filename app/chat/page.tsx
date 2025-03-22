@@ -179,7 +179,7 @@ export default function ChatWidget() {
             className="object-contain w-full h-full p-1"
             style={{width: "45px"}}
           />
-        <p className="p-4 font-bold">Chat with me!</p>
+        <p className="p-4 font-bold text-black">Chat with me!</p>
       </div>
       <div className="divide-y divide-gray-300/50 border-t border-t-[#f59e0b] border-gray-300/50 ">
         <div className="space-y-6 py-8 text-[13px] leading-7 text-gray-700 h-[300px] overflow-y-auto">
