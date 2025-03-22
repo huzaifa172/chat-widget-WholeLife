@@ -10,15 +10,12 @@ export default function Home() {
             ChatWidget.init("xx-slkUdka819...");
         };
         `}</Script>
-<<<<<<< HEAD
-      <div className="flex justify-center items-center h-[100vh] w-[100vw] bg-gray-100">
-        <h1 className="text-black text-center font-bold font-[70px] ">Whole Life Chat Widget</h1>
+      <div className="flex justify-center items-center h-[100vh] w-[100vw] bg-transparent">
       </div>
       <div>
       <iframe src="..." className="hidden" ></iframe>
       <button id="trigger-btn"></button>
     </div>
-=======
         <iframe src="..." className="hidden" ></iframe>
         {/* Chat widget deployed on vercel by Huzaifa:*/}
         {/* <iframe
@@ -30,7 +27,6 @@ export default function Home() {
       {/* <div>
         <button id="trigger-btn"></button>
       </div> */}
->>>>>>> 942c0fbb3c6b7760aacae8d4d29689ff007e6882
 
    </>
   );
