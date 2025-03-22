@@ -69,9 +69,10 @@
 
   function intChatInterface(chatKey) {
     const chatWidget = document.createElement("div");
+    // chatWidget.style.backgroundColor = "#000";
     chatWidget.id = "chat-widget";
     chatWidget.innerHTML = `
-            <iframe id="chat-frame-widget" src="/chat" class="shadow-xl ring-1 rounded-lg" style="display: none; border: none; position: fixed; inset: auto 60px 100px auto; width: 400px; height: 540px; opacity: 1; color-scheme: none; background: transparent !important; margin: 0px; max-height: 100vh; max-width: 100vw; transform: translateY(0px); transition: none 0s ease 0s !important; visibility: visible; z-index: 999999999 !important;"></iframe>
+            <iframe id="chat-frame-widget" src="/chat" class="shadow-xl ring-1 rounded-lg" style="display: none; border: none; position: fixed; inset: auto 60px 110px auto; width: 400px; height: 495px; opacity: 1; color-scheme: none; background: white !important; margin: 0px; max-height: 100vh; max-width: 100vw; transform: translateY(0px); transition: none 0s ease 0s !important; visibility: visible; z-index: 999999999 !important;"></iframe>
             <button id="btn-trigger-chat" class="shadow-xl ring-1">${components.icon_message}</button>
             `;
 
