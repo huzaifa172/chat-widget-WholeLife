@@ -64,7 +64,7 @@ export default function ChatWidget() {
       const data = await response.json();
       setMessages((prevMessages) => [
         ...prevMessages,
-        { role: 'bot', content: data.response },
+        { role: 'bot', content: data['response']['output_text'] },
       ]);
     } catch (error) {
       console.error('Error fetching response:', error);
