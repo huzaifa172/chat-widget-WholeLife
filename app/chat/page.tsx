@@ -212,6 +212,7 @@ export default function ChatWidget() {
                 <p
                   className="py-1 px-3 rounded-[12px] text-black"
                   style={{
+                    color: "white",
                     backgroundImage:
                       'linear-gradient(135deg, #d1c5b7 0%, #756d5d 100%)',
                   }}
