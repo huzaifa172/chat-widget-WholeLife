@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 export async function GET() {
   try {
     // Replace with your Flask API URL
-    const flaskAPIUrl = 'http://localhost:7888/start';
+    const flaskAPIUrl = 'https://chat.wholelife.church/start';
     
     const response = await fetch(flaskAPIUrl, {
       method: 'GET',

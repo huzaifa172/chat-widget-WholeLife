@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     
     // Replace with your Flask API URL
-    const flaskAPIUrl = 'http://127.0.0.1:7888/ask';
+    const flaskAPIUrl = 'https://chat.wholelife.church/ask';
     
     const response = await fetch(flaskAPIUrl, {
       method: 'POST',
