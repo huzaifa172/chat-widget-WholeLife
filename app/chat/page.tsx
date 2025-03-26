@@ -66,7 +66,7 @@ export default function ChatWidget() {
       const data = await response.json();
       setMessages((prevMessages) => [
         ...prevMessages,
-        { role: 'bot', content: data.response },
+        { role: 'bot', content: data['response']['output_text'] },
       ]);
     } catch (error) {
       console.error('Error fetching response:', error);
@@ -219,6 +219,7 @@ export default function ChatWidget() {
                 <p
                   className="py-1 px-3 rounded-[12px] text-black"
                   style={{
+                    color: "white",
                     backgroundImage:
                       'linear-gradient(135deg, #d1c5b7 0%, #756d5d 100%)',
                   }}
