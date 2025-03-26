@@ -16,11 +16,14 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify(body),
     });
     
+
+
     if (!response.ok) {
       throw new Error(`Flask API responded with status: ${response.status}`);
     }
     
     const data = await response.json();
+    console.log(data.message)
     return NextResponse.json(data);
   } catch (error) {
     console.error('Error proxying to Flask API:', error);

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@media (max-width: 321px){
+  #chat-frame-widget{
+    position: fixed;
+    inset: auto 0px 70px 10px !important;
+  }
+
+  #chat-widget {
+    bottom: 20px !important;
+    right: 20px !important;
+  }
+  .chat-main-cnt{
+    max-width: 300px;
+    
+  }
+
+}
+
+@media (min-width : 322px) and (max-width: 420px){
+  #chat-frame-widget{
+    position: fixed;
+    inset: auto 10px 70px 10px !important;
+  }
+  #chat-widget {
+    bottom: 20px !important;
+    right: 20px !important;
+
+  }
+
+  .chat-main-cnt{
+    max-width: 90%;
+    
+  }
+
+}
+
+
+
+@media (min-width : 421px) and (max-width: 520px){
+  #chat-frame-widget{
+    position: fixed;
+    inset: auto 0px 70px auto !important;
+  }
+  #chat-widget {
+    bottom: 20px !important;
+    right: 20px !important;
+
+  }
+
+  .chat-main-cnt{
+    max-width: 400px !important;
+    
+  }
+
+}

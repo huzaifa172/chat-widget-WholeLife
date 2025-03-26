@@ -5,7 +5,6 @@ export async function GET() {
   try {
     // Replace with your Flask API URL
     const flaskAPIUrl = 'https://chat.wholelife.church/start';
-    
     const response = await fetch(flaskAPIUrl, {
       method: 'GET',
       headers: {

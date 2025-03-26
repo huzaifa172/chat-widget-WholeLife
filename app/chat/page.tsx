@@ -1,4 +1,6 @@
 'use client';
+import Head from 'next/head';
+import './style.css'
 import { useRef, useState, useEffect } from 'react';
 
 export default function ChatWidget() {
@@ -171,7 +173,12 @@ export default function ChatWidget() {
   }
 
   return (
-    <div className="relative bg-transparent max-w-[400px] mt-8 rounded-[10px] border border-[#f59e0b] rounded-[10px] pb-[0px] pt-[0px] mt-[0px] mb-[0px]">
+<>
+    <Head>
+      <meta name="viewport" content="width=1000; user-scalable=0;" />
+    </Head>
+
+    <div className="chat-main-cnt relative bg-transparent max-w-[400px] mt-8 rounded-[10px] border border-[#f59e0b] rounded-[10px] pb-[0px] pt-[0px] mt-[0px] mb-[0px]">
       <div style={{ display: 'flex', alignContent: 'center', alignItems: 'center', marginLeft: '2vh' }} className='bg-transparent'>
           <img
             src="logo.png"
@@ -262,5 +269,6 @@ export default function ChatWidget() {
         </form>
       </div>
     </div>
+    </>
   );
 }

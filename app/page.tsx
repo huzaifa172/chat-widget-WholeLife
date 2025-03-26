@@ -1,5 +1,6 @@
 "use client";
 import Script from "next/script";
+import './chat/style.css'
 
 export default function Home() {
   return (
