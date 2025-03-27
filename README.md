@@ -29,6 +29,28 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Embedding a Chat Page
+
+If you want to add a chat page to your website using an iframe, you can do so by embedding the chat page URL in an iframe tag. Here's an example:
+
+```html
+<iframe
+  src="https://url"
+  width="100%"
+  height="500px"
+  style="border: none;"
+>
+</iframe>
+```
+
+### Steps to Add a Chat Page
+
+1. Replace `https://your-chat-page-url.com` with the URL of your chat page.
+2. Adjust the `width` and `height` attributes as needed to fit your design.
+3. Add the iframe code to the desired location in your HTML or Next.js component.
+
+This will render the chat page within your website, allowing users to interact with it seamlessly.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
